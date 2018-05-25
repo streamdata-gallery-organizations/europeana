@@ -1,10 +1,10 @@
 ---
 swagger: "2.0"
 x-collection-name: Europeana
-x-complete: 1
+x-complete: 0
 info:
-  title: Europeana
-  description: this-swagger-api-console-provides-an-overview-of-an-interface-to-the-europeana-rest-api--you-can-build-and-test-anything-from-the-simplest-search-to-a-complex-query-using-facetlist-such-as-dates-geotags-and-permissions--for-more-help-and-information-head-to-our-comprehensive-a-hrefhttplabs-europeana-euapionline-documentationa-
+  title: Europeana get autocompletion recommendations for search queries
+  description: Get autocompletion recommendations for search queries.
   termsOfService: http://www.europeana.eu/portal/en/rights.html
   contact:
     name: http://labs.europeana.eu/api
@@ -353,32 +353,17 @@ paths:
           description: OK
       tags:
       - Suggestions
-  /translateQuery.json:
-    get:
-      summary: translate a term to different languages
-      description: Translate a term to different languages.
-      operationId: translateQueryUsingGET
-      x-api-path-slug: translatequery-json-get
-      parameters:
-      - in: query
-        name: callback
-        description: callback
-      - in: query
-        name: languageCodes
-        description: languageCodes
-      - in: query
-        name: profile
-        description: profile
-      - in: query
-        name: term
-        description: term
-      - in: query
-        name: wskey
-        description: wskey
-      responses:
-        200:
-          description: OK
-      tags:
-      - Translations
-      - Query
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
 ---

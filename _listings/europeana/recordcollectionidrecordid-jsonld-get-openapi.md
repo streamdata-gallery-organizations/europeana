@@ -1,10 +1,10 @@
 ---
 swagger: "2.0"
 x-collection-name: Europeana
-x-complete: 1
+x-complete: 0
 info:
-  title: Europeana
-  description: this-swagger-api-console-provides-an-overview-of-an-interface-to-the-europeana-rest-api--you-can-build-and-test-anything-from-the-simplest-search-to-a-complex-query-using-facetlist-such-as-dates-geotags-and-permissions--for-more-help-and-information-head-to-our-comprehensive-a-hrefhttplabs-europeana-euapionline-documentationa-
+  title: Europeana get single record in JSON LD format
+  description: Get single record in json ld format.
   termsOfService: http://www.europeana.eu/portal/en/rights.html
   contact:
     name: http://labs.europeana.eu/api
@@ -221,164 +221,17 @@ paths:
           description: OK
       tags:
       - Collections
-  /record/{collectionId}/{recordId}.rdf:
-    get:
-      summary: get single record in RDF format)
-      description: Get single record in rdf format).
-      operationId: getSingleRecordRDF
-      x-api-path-slug: recordcollectionidrecordid-rdf-get
-      parameters:
-      - in: path
-        name: collectionId
-        description: collectionId
-      - in: path
-        name: recordId
-        description: recordId
-      - in: query
-        name: wskey
-        description: wskey
-      responses:
-        200:
-          description: OK
-      tags:
-      - Collections
-  /search.json:
-    get:
-      summary: search for records
-      description: Search for records.
-      operationId: searchRecords
-      x-api-path-slug: search-json-get
-      parameters:
-      - in: query
-        name: callback
-        description: callback
-      - in: query
-        name: colourpalette
-        description: colourpalette
-      - in: query
-        name: cursor
-        description: cursor
-      - in: query
-        name: facet
-        description: facet
-      - in: query
-        name: landingpage
-        description: landingpage
-      - in: query
-        name: media
-        description: media
-      - in: query
-        name: profile
-        description: profile
-      - in: query
-        name: qf
-        description: qf
-      - in: query
-        name: query
-        description: query
-      - in: query
-        name: reusability
-        description: reusability
-      - in: query
-        name: rows
-        description: rows
-      - in: query
-        name: sort
-        description: sort
-      - in: query
-        name: start
-        description: start
-      - in: query
-        name: text_fulltext
-        description: text_fulltext
-      - in: query
-        name: thumbnail
-        description: thumbnail
-      - in: query
-        name: wskey
-        description: wskey
-      responses:
-        200:
-          description: OK
-      tags:
-      - Search
-  /search.rss:
-    get:
-      summary: Google Fieldtrip formatted RSS of selected collections
-      description: Google fieldtrip formatted rss of selected collections.
-      operationId: fieldTrip
-      x-api-path-slug: search-rss-get
-      parameters:
-      - in: query
-        name: language
-        description: language
-      - in: query
-        name: limit
-        description: limit
-      - in: query
-        name: offset
-        description: offset
-      - in: query
-        name: profile
-        description: profile
-      - in: query
-        name: query
-        description: query
-      responses:
-        200:
-          description: OK
-      tags:
-      - Search
-  /suggestions.json:
-    get:
-      summary: get autocompletion recommendations for search queries
-      description: Get autocompletion recommendations for search queries.
-      operationId: suggestions
-      x-api-path-slug: suggestions-json-get
-      parameters:
-      - in: query
-        name: callback
-        description: callback
-      - in: query
-        name: phrases
-        description: phrases
-      - in: query
-        name: query
-        description: query
-      - in: query
-        name: rows
-        description: rows
-      responses:
-        200:
-          description: OK
-      tags:
-      - Suggestions
-  /translateQuery.json:
-    get:
-      summary: translate a term to different languages
-      description: Translate a term to different languages.
-      operationId: translateQueryUsingGET
-      x-api-path-slug: translatequery-json-get
-      parameters:
-      - in: query
-        name: callback
-        description: callback
-      - in: query
-        name: languageCodes
-        description: languageCodes
-      - in: query
-        name: profile
-        description: profile
-      - in: query
-        name: term
-        description: term
-      - in: query
-        name: wskey
-        description: wskey
-      responses:
-        200:
-          description: OK
-      tags:
-      - Translations
-      - Query
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
 ---
