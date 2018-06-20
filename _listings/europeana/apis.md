@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/777-europe
 x-kinRank: "9"
 x-alexaRank: "68066"
 tags: Europeana
-created: "2018-05-25"
-modified: "2018-05-25"
+created: "2018-06-19"
+modified: "2018-06-19"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/europeana/master/_listings/europeana/apis.md
 specificationVersion: "0.14"
 apis:
@@ -196,6 +196,8 @@ x-common:
   url: https://twitter.com/EuropeanaEU
 - type: x-website
   url: http://europeana.eu/portal/
+- type: x-website
+  url: http://europeana.eu
 include: []
 maintainers:
 - FN: Kin Lane
