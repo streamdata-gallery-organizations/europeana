@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Europeana
 x-complete: 1
@@ -381,4 +380,3 @@ paths:
       tags:
       - Translations
       - Query
----

@@ -1,0 +1,33 @@
+{
+	"name": "Streadata.io API Gallery - Europeana",
+	"description": "This is a repository of europeana APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/europeana.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-30",
+	"url": "http://europeana.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "Europeana",
+			"x-api-slug": "europeana",
+			"description": "Explore 51,990,182 artworks, artefacts, books, videos and sounds from more than 3,500 museums, galleries, libraries and archives across Europe.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/777-europeana.jpg",
+			"humanURL": "http://europeana.eu/portal/",
+			"baseURL": "https://www.europeana.eu/v2/",
+			"tags": "Europeana",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/europeana/master/_listings/europeana/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Europeana",
+	"include": [
+		{
+			"name": "Europeana",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/europeana/master/_listings/europeana/apis.yaml"
+		}
+	]
+}
